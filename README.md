@@ -102,5 +102,6 @@ python iot2splunk.py
 6. **Wifi**: Ensure that all the devices are either in same LAN or you have configured the project accordingly to transmit over internet. 
 
 ## Other Contributers:
+- [Mann Patel](https://github.com/Mann2oo2)
 
 Feel free to explore, modify, and extend the project to suit your IoT and data analytics needs!
