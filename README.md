@@ -82,14 +82,29 @@ python iot2splunk.py
 
 ## Screenshots
 
-### 1. Data Logged in Splunk  
-![Cleint View Connected Device List](Screenshot/Cleint_View Connected_Device_List.png)  
+### 1. Viewing Connected Devices List  
+![Cleint View Connected Device List](Screenshots/Cleint_View_Connected_Device_List.png)  
 
-### 2. Device Management via Client  
-![Device Management Interface](Screenshot/)  
+### 2. Pinging iot2Splunk Daemon via Client  
+![Device Management Interface](Screenshots/Client_Ping_Server.png)  
 
-### 3. Real-time Log Forwarding  
-![Real-time Logs](link-to-screenshot-3) 
+### 3. View Device Forwarding Configuration  
+![Client View Device Forwarding Configuration](Screenshots/Client_View_Device_Forwarding_Configuration.png) 
+
+### 4. Create new splunk index to forward data:  
+![Create New Splunk Index to forward data](Screenshots/Create_New_Splunk_Index_to_forward_data_to.png) 
+
+### 5. View IOT2Splunk Daemon's Logs:
+![IOT2Splunk Daemon Logs](Screenshots/IOT2Splunk_Daemon_Logs.png) 
+
+### 6. Iot2Splunk Daemon:  
+![Splunk Daemon](Screenshots/Splunk_Daemon.png) 
+
+### 7. Server Daemon receiving logs from multiple devices:  
+![Server Daemon receiving logs from multiple devices](Screenshots/Server_Daemon_receiving_logs_from_multiple_devices.png) 
+
+### 8. Data in Splunk Index:  
+![Splunk Index](Screenshots/Splunk_Index.png)
 
 
 ## Notes
