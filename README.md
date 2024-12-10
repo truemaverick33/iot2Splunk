@@ -60,7 +60,21 @@ Update the following fields in `conf.json`:
 - Install Adafruit Unified Sensor as well if prompted.
 - Also Requires WifiClient library for esp8266
 
-### 6. Upload Sensor Code to NodeMCU
+### 7. Set up hardware:
+
+#### DHT11 Sensor Connection Mapping:
+
+| **Sensor Pin** | **NodeMCU Connection** | **Arduino Connection** |  
+|-----------------|-------------------------|-------------------------| 
+| VCC             | 3V3                    | 5V                      |  
+| Data            | D2                     | D2                      |  
+| GND             | GND                    | GND                     |  
+
+---
+
+If there are other sensors you'd like to include, let me know and I can expand the table!
+
+### 7. Upload Sensor Code to NodeMCU
 - Replace placeholders in the provided Arduino `.ino` file:
   - `ssid` and `password` with your Wi-Fi credentials.
   - `server_ip` with the daemon's IP address (same as `SPLDAEMON` in `conf.json`).
