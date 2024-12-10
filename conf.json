@@ -1,0 +1,11 @@
+{
+    "HOST": "0.0.0.0",
+    "PORT": 8080,
+    "SPLUNK_HEC_URL": "http://127.0.0.1:8088",
+    "SPLUNK_HEC_TOKEN": "--Your HEC Token Here--",
+    "LOG_FILE": "iot_logs.txt",
+    "USERNAME": "--Your Splunk Admin Username--",
+    "PASSWORD": "--Your Splunk Admin Password--",
+	"SPLDAEMON": "--Your Local IP address--",
+	"SPLUNK_HEC_NAME": "http://<Your HEC Name>"
+}
