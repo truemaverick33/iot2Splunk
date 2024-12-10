@@ -54,6 +54,12 @@ Update the following fields in `conf.json`:
 - Update the IP address of the IOT devices in the dev_conf.json according to your local configurations
 - If you are unaware of IP address or have issues refer to Note 5.
 
+### 6. Set up Arduino Enviornment
+- Go to Sketch > Include Library > Manage Libraries.
+- Search for DHT sensor library by Adafruit and install it.
+- Install Adafruit Unified Sensor as well if prompted.
+- Also Requires WifiClient library for esp8266
+
 ### 6. Upload Sensor Code to NodeMCU
 - Replace placeholders in the provided Arduino `.ino` file:
   - `ssid` and `password` with your Wi-Fi credentials.
@@ -110,11 +116,12 @@ python iot2splunk.py
 ## Notes
 
 1. **Credentials**: Update credentials and necessary placeholder values in `conf.json`, `dev_conf.json` and `.ino` files before starting.
-2. **Dependencies**: Ensure all Python dependencies are installed using the provided `requirements.txt`.
+2. **Dependencies**: Ensure all Python dependencies are installed using the provided `requirements.txt`. Also install required libraries for Arduino IDE.
 3. **System Requirements**: Run both the daemon and client scripts to manage and forward IoT logs.
 4. **Customizations**: Adapt sensor thresholds, Splunk index names, and log formats as per your requirements.
 5. **Issues**: If you are unaware of IP address of your IOT device, you can change the dev_conf.json to just [].
-6. **Wifi**: Ensure that all the devices are either in same LAN or you have configured the project accordingly to transmit over internet. 
+6. **Wifi**: Ensure that all the devices are either in same LAN or you have configured the project accordingly to transmit over internet.
+7. **Demo Code**: Demo Code for dht11 sensor and obstactle(IR) sensor are given in the Demo Directory.
 
 ## Other Contributers:
 - [Mann Patel](https://github.com/Mann2oo2)
