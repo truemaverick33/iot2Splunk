@@ -1,5 +1,3 @@
----
-
 # IoT2Splunk
 
 IoT2Splunk is an innovative project that integrates IoT devices with Splunk for real-time data logging and monitoring. The system forwards sensor data from NodeMCU devices to a Splunk instance using HTTP Event Collector (HEC). This solution is ideal for tracking and analyzing environmental metrics or any custom IoT application.
