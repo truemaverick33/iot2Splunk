@@ -2,8 +2,6 @@
 
 IoT2Splunk is an innovative project that integrates IoT devices with Splunk for real-time data logging and monitoring. The system forwards sensor data from NodeMCU devices to a Splunk instance using HTTP Event Collector (HEC). This solution is ideal for tracking and analyzing environmental metrics or any custom IoT application.
 
----
-
 ## Features
 
 - **Real-time IoT Data Logging**: Collects and logs data from IoT sensors such as DHT11 (temperature and humidity) and IR sensors.
@@ -16,8 +14,6 @@ IoT2Splunk is an innovative project that integrates IoT devices with Splunk for 
 - **Scalable and Extendable**: Easily add new IoT devices or sensors.
 - **Logs Dashboard**: Analyze logs directly in Splunk with your custom queries and visualizations.
 
----
-
 ## Requirements
 
 - **Hardware**:
@@ -28,8 +24,6 @@ IoT2Splunk is an innovative project that integrates IoT devices with Splunk for 
   - Splunk installed on your PC (with HTTP Event Collector enabled).
   - Python 3.9+.
   - Arduino IDE for programming NodeMCU.
-
----
 
 ## Installation
 
@@ -66,8 +60,6 @@ Update the following fields in `conf.json`:
   - `server_ip` with the daemon's IP address (same as `SPLDAEMON` in `conf.json`).
 - Upload the sketch to your NodeMCU using the Arduino IDE.
 
----
-
 ## Usage
 
 ### Start the Daemon
@@ -88,8 +80,6 @@ python iot2splunk.py
 - Access Splunk's dashboard.
 - Use `index=iot_logs` (or your configured index) to query IoT data.
 
----
-
 ## Screenshots
 
 ### 1. Data Logged in Splunk  
@@ -101,7 +91,6 @@ python iot2splunk.py
 ### 3. Real-time Log Forwarding  
 ![Real-time Logs](link-to-screenshot-3) 
 
----
 
 ## Notes
 
@@ -112,6 +101,6 @@ python iot2splunk.py
 5. **Issues**: If you are unaware of IP address of your IOT device, you can change the dev_conf.json to just [].
 6. **Wifi**: Ensure that all the devices are either in same LAN or you have configured the project accordingly to transmit over internet. 
 
----
+## Other Contributers:
 
 Feel free to explore, modify, and extend the project to suit your IoT and data analytics needs!
