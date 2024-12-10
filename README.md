@@ -83,7 +83,7 @@ python iot2splunk.py
 ## Screenshots
 
 ### 1. Data Logged in Splunk  
-![IoT Data in Splunk](link-to-screenshot-1)  
+![Cleint View Connected Device List](Screenshot/Cleint View Connected Device List.png)  
 
 ### 2. Device Management via Client  
 ![Device Management Interface](link-to-screenshot-2)  
