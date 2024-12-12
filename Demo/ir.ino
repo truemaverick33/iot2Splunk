@@ -1,10 +1,6 @@
-//#include <DHT.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
-/**
-#define DHTPIN D2
-#define DHTTYPE DHT11
-**/
+
 const char* ssid = "--Your SSID--";
 const char* password = "--Your Wifi Password--";
 const char* server_ip = "--Your Local IP Address(same as SPLDAEMON value in conf.json)--";
@@ -12,12 +8,9 @@ const int server_port = 8080;
 const int sensorPin = D1;     // IR Obstacle Sensor output pin
 const int ledPin = D2;        // LED pin for obstacle indication
 String log_data;
-//DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
   Serial.begin(9600);
-//  Serial.println("DHT11 Sensor Reading...");
-//  dht.begin();
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
@@ -29,11 +22,6 @@ void setup() {
 void loop() {
   // IR Obstacle Sensor reading
   int sensorValue = digitalRead(sensorPin);
-  /**if (isnan(humidity) || isnan(temperature)) {
-    Serial.println("Error reading data from DHT11 sensor!");
-    delay(10000);
-    return;
-  }**/
   if (sensorValue == 0)
   {
     log_data = "{\"Sensor Output\": " + String(sensorValue) + ", \"Message\": \"Object Detected.\", \"ip\": \"" + WiFi.localIP().toString() + "\"}";
@@ -62,13 +50,6 @@ void loop() {
   } else {
     Serial.println("WiFi Disconnected");
   }
-  /**
-  Serial.print("Humidity: ");
-  Serial.print(sensorValue);
-  Serial.print("%, Temperature: ");
-  Serial.print(sensorValue);
-  Serial.println("°C");
-  **/
   Serial.println(log_data);
   delay(8000);
 }
